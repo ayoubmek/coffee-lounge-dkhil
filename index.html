@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR Redirect</title>
-  <script>
-    // نقرأ الرابط من ملف redirect.json
+  <script> 
     fetch("redirect.json")
       .then(response => response.json())
-      .then(data => {
-        // نعمل إعادة توجيه
+      .then(data => { 
         window.location.href = data.url;
       })
       .catch(error => {
